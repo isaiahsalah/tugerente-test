@@ -10,7 +10,7 @@ export default function PostScreen({ navigation }) {
         <ScrollView>
             <Appbar.Header>
                 <Appbar.Action icon="arrow-left" onPress={() => navigation.goBack()} />
-                <Appbar.Content title={post.title} subtitle='Lista de post del usuario' />
+                <Appbar.Content title={post.title} subtitle='Post del usuario' />
             </Appbar.Header>
             <View style={{ alignItems: 'center' }}>
                 <Image style={{
