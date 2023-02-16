@@ -4,8 +4,7 @@
     </b>
 </h1>
 
-# Prueba técnica sobre React Native
-Esta es un prueba técnica sobre las capacidades que pueda tener en el desarrollo de aplicaciones con React Native
+Prueba técnica realizada para tuGerente.com usando React Native
 
 Install:
 
