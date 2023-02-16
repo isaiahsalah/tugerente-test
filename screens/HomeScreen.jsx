@@ -1,11 +1,9 @@
-import { View, Text, ScrollView } from 'react-native'
+import { View,} from 'react-native'
 import React from 'react'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { Appbar, BottomNavigation, Button, List, TextInput, Snackbar } from 'react-native-paper'
+import { Appbar, Button, List, TextInput, Snackbar } from 'react-native-paper'
 import { UserContext } from '../providers/UserProvider'
 import axios from 'axios'
 import { urlApi, urlUser } from '../utils/ApiData'
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 
 export default function HomeScreen({ navigation }) {
 
@@ -71,7 +69,6 @@ export default function HomeScreen({ navigation }) {
                 />
             )) : null}
             <Button style={{ marginHorizontal: 12, position: 'relative', }} children={'Ingresar'} mode='contained' onPress={onPressIngresar} />
-            
             <Snackbar
                 visible={snackbar.visible}
                 duration={2000}

@@ -1,7 +1,7 @@
-import { Dimensions, Image, ScrollView, StyleSheet, View } from 'react-native'
+import { Dimensions, Image, ScrollView, View } from 'react-native'
 import React from 'react'
 import { PostContext } from '../providers/PostProvider'
-import { Appbar, Divider, Text } from 'react-native-paper'
+import { Appbar, Text } from 'react-native-paper'
 
 export default function PostScreen({ navigation }) {
     const { post, setPost } = React.useContext(PostContext)

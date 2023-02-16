@@ -1,8 +1,6 @@
-import { View, Text } from 'react-native'
 import React from 'react'
 import { Appbar, List } from 'react-native-paper'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
-
 import axios from 'axios'
 import { urlApi, urlPhotos, urlPost } from '../utils/ApiData'
 import { UserContext } from '../providers/UserProvider'
@@ -14,7 +12,6 @@ export default function ListScreen({ navigation }) {
     const { user, setUser } = React.useContext(UserContext)
     const { post, setPost } = React.useContext(PostContext)
     const [posts, setPosts] = React.useState([])
-    const [photos, setPhotos] = React.useState([])
 
     React.useEffect(() => {
         axios.get(urlApi + urlPhotos)
